@@ -31,7 +31,7 @@ const user = user_model(sequelize,DataTypes)
 let init_dataBase
 init_dataBase = () => {
   return sequelize.sync(
-    {force:false}
+    {force:true}
   ).then(() => {
     console.log('La base de données a bien été initialisée !');
   });
