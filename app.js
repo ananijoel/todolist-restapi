@@ -19,7 +19,7 @@ app
     .use(bodyParser.json())
     .use(cors({ origin: 'http://127.0.0.1:5500' }))
 
-app.get('/', (req, res) => res.json('hello Todo_list_api'))
+app.get('/', (req, res) => res.json('hello Todo_list_restapi'))
 
 //todos routes
 require('./src/routes/todos/add-todo')(app)
